@@ -7,7 +7,7 @@ export default function Sidebar() {
         <Link href="/">⌂ Home</Link>
         <Link href="/about">● About</Link>
         <Link href="/contact">✉ Contact</Link>
-        <Link href="/team">👥 Team</Link>
+        <Link href="/team"><span className="inline-block brightness-0 invert">👥</span> Team</Link>
       </nav>
     </aside>
   );
