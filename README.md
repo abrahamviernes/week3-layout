@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Laurus Studio — Week 3 Assignment 2
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a Next.js website created for WDD325 Week 3 Assignment 2: Reusable Components and Persistent Navigation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The website demonstrates reusable components, consistent styling, and navigation between multiple pages using the Next.js App Router.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Layout Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The `app/layout.js` file contains the shared layout for the website. It includes the Header, Sidebar, and Footer outside the main content area.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The `{children}` section displays the content of the selected page while the shared layout remains visible.
 
-## Learn More
+## Reusable Components
 
-To learn more about Next.js, take a look at the following resources:
+The `app/components` folder contains four reusable components:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Header.jsx:** Displays the Laurus Studio title and Login and Register buttons.
+- **Sidebar.jsx:** Provides navigation links to Home, About, and Contact.
+- **Footer.jsx:** Displays the copyright information on every page.
+- **Button.jsx:** Provides consistent button styling and accepts customizable text through the `ctaText` property.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The Button component is reused for Login, Register, and Get Started.
 
-## Deploy on Vercel
+## Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Home:** Contains a welcome headline, supporting text, and Get Started button.
+- **About:** Provides information about Laurus Studio.
+- **Contact:** Displays a brief contact message.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design Choices
+
+The website uses a navy-blue and white color scheme for a clean, consistent appearance.
+
+Tailwind CSS is used for styling, spacing, and layout. The header, sidebar, and footer maintain a consistent appearance across pages.
+
+## Navigation and Deployment
+
+Navigation is implemented with Next.js `Link` components.
+
+The project is hosted on GitHub and deployed through Vercel.
+
+**GitHub Repository:** https://github.com/abrahamviernes/week3-layout
+
+**Live Website:** https://week3-layout-pearl.vercel.app/
+
+## Running the Project Locally
+
+Install the project dependencies using `npm install`.
+
+Start the development server using `npm run dev`.
+
+Open `http://localhost:3000` in a browser.
