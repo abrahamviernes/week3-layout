@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section>
-      <h1 className="text-3xl font-bold mb-4">Contact Page</h1>
+    <section className="flex min-h-[60vh] flex-col items-center justify-center text-center">
+      <h1 className="text-3xl font-bold mb-4 relative -top-12">Contact Page</h1>
 
       <p>
         Contact Laurus Studio for more information.
