@@ -17,7 +17,7 @@ The `{children}` section displays the content of the selected page while the sha
 The `app/components` folder contains four reusable components:
 
 - **Header.jsx:** Displays the Laurus Studio title and Login and Register buttons.
-- **Sidebar.jsx:** Provides navigation links to Home, About, and Contact.
+- **Sidebar.jsx:** Provides navigation links to Home, About, Contact, and Team.
 - **Footer.jsx:** Displays the copyright information on every page.
 - **Button.jsx:** Provides consistent button styling and accepts customizable text through the `ctaText` property.
 
@@ -28,6 +28,7 @@ The Button component is reused for Login, Register, and Get Started.
 - **Home:** Contains a welcome headline, supporting text, and Get Started button.
 - **About:** Provides information about Laurus Studio.
 - **Contact:** Displays a brief contact message.
+- **Team:** Displays three team members with photos, names, and roles.
 
 ## Design Choices
 
